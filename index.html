@@ -138,7 +138,8 @@
         <p>
           You can put elements inside other elements too — this is called
           nesting. If we wanted to state that our cat is very grumpy, we could
-          wrap the word "very" in a &lt;strong&gt; element, which means that the
+          wrap the word "very" in a
+          <span class="mono">&lt;strong&gt;</span> element, which means that the
           word is to be strongly emphasized:
         </p>
         <code
@@ -147,10 +148,13 @@
         </code>
         <p>
           You do however need to make sure that your elements are properly
-          nested. In the example above, we opened the &lt;p&gt; element first,
-          then the &gt;strong&lt; element; therefore, we have to close the
-          &lt;strong&gt; element first, then the &lt;p&gt; element. The
-          following is incorrect:
+          nested. In the example above, we opened the
+          <span class="mono">&lt;p&gt;</span> element first, then the
+          <span class="mono">&lt;strong&gt;</span> element; therefore, we have
+          to close the
+          <span class="mono">&lt;strong&gt;</span>
+          element first, then the <span class="mono">&lt;p&gt;</span> element.
+          The following is incorrect:
         </p>
         <code
           >&lt;p&gt;My cat is &lt;strong&gt;very
@@ -168,16 +172,17 @@
         <header>Void elements</header>
         <p>
           Some elements have no content and are called void elements. Take the
-          &lt;img&gt; element that we already have in our HTML page:
+          <span class="mono">&lt;img&gt;</span> element that we already have in
+          our HTML page:
         </p>
         <code
           >&lt;img src="images/firefox-icon.png" alt="My test image" /&gt;
         </code>
         <p>
-          This contains two attributes, but there is no closing &lt;/img&gt; tag
-          and no inner content. This is because an image element doesn't wrap
-          content to affect it. Its purpose is to embed an image in the HTML
-          page in the place it appears.
+          This contains two attributes, but there is no closing
+          <span class="mono">&lt;/img&gt;</span> tag and no inner content. This
+          is because an image element doesn't wrap content to affect it. Its
+          purpose is to embed an image in the HTML page in the place it appears.
         </p>
       </section>
 
@@ -187,8 +192,8 @@
           That wraps up the basics of individual HTML elements, but they aren't
           handy on their own. Now we'll look at how individual elements are
           combined to form an entire HTML page. Let's revisit the code we put
-          into our index.html example (which we first met in the Dealing with
-          files article):
+          into our <span class="mono">index.html</span> example (which we first
+          met in the Dealing with files article):
         </p>
         <code>
           <code>&lt;!doctype html&gt;</code>
@@ -212,59 +217,70 @@
         <p>Here, we have the following:</p>
         <ul>
           <li>
-            &lt;!DOCTYPE html&gt; &mdash; doctype. It is a required preamble. In
-            the mists of time, when HTML was young (around 1991/92), doctypes
-            were meant to act as links to a set of rules that the HTML page had
-            to follow to be considered good HTML, which could mean automatic
-            error checking and other useful things. However, these days, they
-            don't do much and are basically just needed to make sure your
-            document behaves correctly. That's all you need to know for now.
+            <span class="mono">&lt;!DOCTYPE html&gt;</span> &mdash; doctype. It
+            is a required preamble. In the mists of time, when HTML was young
+            (around 1991/92), doctypes were meant to act as links to a set of
+            rules that the HTML page had to follow to be considered good HTML,
+            which could mean automatic error checking and other useful things.
+            However, these days, they don't do much and are basically just
+            needed to make sure your document behaves correctly. That's all you
+            need to know for now.
           </li>
           <li>
-            &lt;html&gt;&lt;/html&gt; &mdash; the &lt;html&gt; element. This
-            element wraps all the content on the entire page and is sometimes
-            known as the root element. It also includes the lang attribute,
-            setting the primary language of the document.
+            <span class="mono">&lt;html&gt;&lt;/html&gt;</span> &mdash; the
+            <span class="mono">&lt;html&gt;</span> element. This element wraps
+            all the content on the entire page and is sometimes known as the
+            root element. It also includes the lang attribute, setting the
+            primary language of the document.
           </li>
           <li>
-            &lt;head&gt;&lt;/head&gt; &mdash; the &lt;head&gt; element. This
-            element acts as a container for all the stuff you want to include on
-            the HTML page that isn't the content you are showing to your page's
-            viewers. This includes things like keywords and a page description
-            that you want to appear in search results, CSS to style our content,
-            character set declarations, and more.
+            <span class="mono">&lt;head&gt;&lt;/head&gt;</span> &mdash; the
+            <span class="mono">&lt;head&gt;</span> element. This element acts as
+            a container for all the stuff you want to include on the HTML page
+            that isn't the content you are showing to your page's viewers. This
+            includes things like keywords and a page description that you want
+            to appear in search results, CSS to style our content, character set
+            declarations, and more.
           </li>
           <li>
-            &lt;meta charset="utf-8"&gt; &mdash; This element sets the character
-            set your document should use to UTF-8 which includes most characters
-            from the vast majority of written languages. Essentially, it can now
-            handle any textual content you might put on it. There is no reason
-            not to set this, and it can help avoid some problems later on.
+            <span class="mono">&lt;meta charset="utf-8"&gt;</span> &mdash; This
+            element sets the character set your document should use to UTF-8
+            which includes most characters from the vast majority of written
+            languages. Essentially, it can now handle any textual content you
+            might put on it. There is no reason not to set this, and it can help
+            avoid some problems later on.
           </li>
           <li>
-            &lt;meta name="viewport" content="width=device-width"&gt; — This
-            viewport element ensures the page renders at the width of viewport,
-            preventing mobile browsers from rendering pages wider than the
-            viewport and then shrinking them down.
+            <span class="mono"
+              >&lt;meta name="viewport" content="width=device-width"&gt;</span
+            >
+            &mdash; This viewport element ensures the page renders at the width
+            of viewport, preventing mobile browsers from rendering pages wider
+            than the viewport and then shrinking them down.
           </li>
           <li>
-            &lt;title&gt;&lt;/title&gt; &mdash; the &lt;title&gt; element. This
-            sets the title of your page, which is the title that appears in the
-            browser tab the page is loaded in. It is also used to describe the
-            page when you bookmark/favorite it.
+            <span class="mono">&lt;title&gt;&lt;/title&gt;</span> &mdash; the
+            <span class="mono">&lt;title&gt;</span> element. This sets the title
+            of your page, which is the title that appears in the browser tab the
+            page is loaded in. It is also used to describe the page when you
+            bookmark/favorite it.
           </li>
           <li>
-            &lt;body&gt;&lt;/body&gt; &mdash; the &lt;body&gt; element. This
-            contains all the content that you want to show to web users when
-            they visit your page, whether that's text, images, videos, games,
-            playable audio tracks, or whatever else.
+            <span class="mono">&lt;body&gt;&lt;/body&gt;</span> &mdash; the
+            <span class="mono">&lt;body&gt;</span> element. This contains all
+            the content that you want to show to web users when they visit your
+            page, whether that's text, images, videos, games, playable audio
+            tracks, or whatever else.
           </li>
         </ul>
       </section>
 
       <section id="images" class="main-section">
         <header>Images</header>
-        <p>Let's turn our attention to the &lt;img&gt; element again:</p>
+        <p>
+          Let's turn our attention to the
+          <span class="mono">&lt;img&gt;</span> element again:
+        </p>
         <code
           >&lt;img src="images/firefox-icon.png" alt="My test image" /&gt;
         </code>
@@ -319,8 +335,9 @@
             Heading elements allow you to specify that certain parts of your
             content are headings — or subheadings. In the same way that a book
             has the main title, chapter titles, and subtitles, an HTML document
-            can too. HTML contains 6 heading levels, &lt;h1&gt; - &lt;h6&gt;,
-            although you'll commonly only use 3 to 4 at most:
+            can too. HTML contains 6 heading levels,
+            <span class="mono">&lt;h1&gt; - &lt;h6&gt;</span>, although you'll
+            commonly only use 3 to 4 at most:
           </p>
           <code>
             <code>&lt;!-- 4 heading levels: --&gt;</code>
@@ -334,9 +351,9 @@
         <section id="paragraphs" class="sub-section">
           <header>Paragraphs</header>
           <p>
-            As explained above, &lt;p&gt; elements are for containing paragraphs
-            of text; you'll use these frequently when marking up regular text
-            content:
+            As explained above, <span class="mono">&lt;p&gt;</span> elements are
+            for containing paragraphs of text; you'll use these frequently when
+            marking up regular text content:
           </p>
           <code>&lt;p&gt;This is a single paragraph&lt;/p&gt; </code>
         </section>
@@ -352,17 +369,17 @@
             <li>
               <strong>Unordered lists</strong> are for lists where the order of
               the items doesn't matter, such as a shopping list. These are
-              wrapped in a &lt;ul&gt; element.
+              wrapped in a <span class="mono">&lt;ul&gt;</span> element.
             </li>
             <li>
               <strong>Ordered lists</strong> are for lists where the order of
               the items does matter, such as a recipe. These are wrapped in an
-              &lt;ol&gt; element.
+              <span class="mono">&lt;ol&gt;</span> element.
             </li>
           </ol>
           <p>
-            Each item inside the lists is put inside an &lt;li&gt; (list item)
-            element.
+            Each item inside the lists is put inside an
+            <span class="mono">&lt;li&gt;</span> (list item) element.
           </p>
           <p>
             For example, if we wanted to turn the part of the following
@@ -391,18 +408,25 @@
         <header>Links</header>
         <p>
           Links are very important &mdash; they are what makes the web a web! To
-          add a link, we need to use a simple element &mdash; &lt;a&gt; &mdash;
-          "a" being the short form for "anchor". To make text within your
-          paragraph into a link, follow these steps:
+          add a link, we need to use a simple element &mdash;
+          <span class="mono">&lt;a&gt;</span> &mdash; "a" being the short form
+          for "anchor". To make text within your paragraph into a link, follow
+          these steps:
         </p>
         <ol>
           <li>Choose some text. We chose the text "Mozilla Manifesto".</li>
           <li>
-            <p>Wrap the text in an &lt;a&gt; element, as shown below:</p>
+            <p>
+              Wrap the text in an <span class="mono">&lt;a&gt;</span> element,
+              as shown below:
+            </p>
             <code>&lt;a&gt;Mozilla Manifesto&lt;/a&gt; </code>
           </li>
           <li>
-            <p>Give the &lt;a&gt; element an href attribute, as shown below:</p>
+            <p>
+              Give the <span class="mono">&lt;a&gt;</span> element an href
+              attribute, as shown below:
+            </p>
             <code>&lt;a href=""&gt;Mozilla Manifesto&lt;/a&gt; </code>
           </li>
           <li>
@@ -419,7 +443,9 @@
           </li>
         </ol>
         <p>
-          You might get unexpected results if you omit the https:// or http://
+          You might get unexpected results if you omit the
+          <span class="mono">https://</span> or
+          <span class="mono">http://</span>
           part, called the protocol, at the beginning of the web address. After
           making a link, click it to make sure it is sending you where you
           wanted it to.
