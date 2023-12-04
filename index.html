@@ -19,29 +19,32 @@
   <body>
     <nav id="navbar">
       <header>HTML Documentation</header>
-      <ul>
+      <ul class="nav-menu">
         <li><a class="nav-link" href="#introduction">Introduction</a></li>
-        <li><a class="nav-link" href="#definition">What is HTML?</a></li>
+        <li><a class="nav-link" href="#what_is_html?">What is HTML?</a></li>
         <li>
-          <a class="nav-link" href="#anatomy-element"
+          <a class="nav-link" href="#anatomy_of_an_html_element"
             >Anatomy of an HTML element</a
           >
         </li>
         <li>
-          <a class="nav-link" href="#nesting-elements">Nesting elements</a>
+          <a class="nav-link" href="#nesting_elements">Nesting elements</a>
         </li>
-        <li><a class="nav-link" href="#void-elements">Void elements</a></li>
+        <li><a class="nav-link" href="#void_elements">Void elements</a></li>
         <li>
-          <a class="nav-link" href="#anatomy-document"
+          <a class="nav-link" href="#anatomy_of_an_html_document"
             >Anatomy of an HTML document</a
           >
         </li>
 
         <li><a class="nav-link" href="#images">Images</a></li>
-        <li><a class="nav-link" href="#marking-up-text">Marking up Text</a></li>
+        <li><a class="nav-link" href="#marking_up_text">Marking up Text</a></li>
         <li><a class="nav-link" href="#links">Links</a></li>
         <li><a class="nav-link" href="#reference">Reference</a></li>
       </ul>
+      <div class="hamburger">
+        <img src="./assets/icons/sidebar.png" alt="sidebar icon" />
+      </div>
     </nav>
 
     <main id="main-doc">
@@ -56,7 +59,7 @@
         </p>
       </section>
 
-      <section id="definition" class="main-section">
+      <section id="what_is_html?" class="main-section">
         <header>What is HTML?</header>
         <p>
           HTML is a markup language that defines the structure of your content.
@@ -75,7 +78,7 @@
         <code>&lt;p&gt;My cat is very grumpy&lt;/p&gt;</code>
       </section>
 
-      <section id="anatomy-element" class="main-section">
+      <section id="anatomy_of_an_html_element" class="main-section">
         <header>Anatomy of an HTML element</header>
         <p>Let's explore this paragraph element a bit further.</p>
         <img
@@ -133,7 +136,7 @@
         </ol>
       </section>
 
-      <section id="nesting-elements" class="main-section">
+      <section id="nesting_elements" class="main-section">
         <header>Nesting elements</header>
         <p>
           You can put elements inside other elements too — this is called
@@ -168,7 +171,7 @@
         </p>
       </section>
 
-      <section id="void-elements" class="main-section">
+      <section id="void_elements" class="main-section">
         <header>Void elements</header>
         <p>
           Some elements have no content and are called void elements. Take the
@@ -186,7 +189,7 @@
         </p>
       </section>
 
-      <section id="anatomy-document" class="main-section">
+      <section id="anatomy_of_an_html_document" class="main-section">
         <header>Anatomy of an HTML document</header>
         <p>
           That wraps up the basics of individual HTML elements, but they aren't
@@ -323,8 +326,8 @@
         </p>
       </section>
 
-      <section id="marking-up-text" class="main-section">
-        <header>Marking up Text</header>
+      <section id="marking_up_text" class="main-section">
+        <header>Marking up text</header>
         <p>
           This section will cover some essential HTML elements you'll use for
           marking up the text.
@@ -463,5 +466,6 @@
         </p>
       </section>
     </main>
+    <script src="./scripts/script.js"></script>
   </body>
 </html>
